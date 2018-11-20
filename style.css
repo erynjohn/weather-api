@@ -1,0 +1,17 @@
+.container {
+    max-width: 550px;
+    height: 100vh;
+    border: 1px solid black;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 1fr 2fr; 
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+.degrees {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+
+}
