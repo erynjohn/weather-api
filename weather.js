@@ -31,15 +31,14 @@ $(document).ready(function () {
         var desc = data.weather[0].description;
         var icon = data.weather[0].icon;
 
+        var windspeed = Math.round(data.wind.speed * 0.6213711922);
+
         $("#city").html(city);
         $("#temp").html(temp);
         $("desc").html(desc);
         $("#icon").attr("src", icon);
-
+        $("#wind-speed").html(windspeed);
+        
+        console.log(data);
     }
-    $("#city-name").keyup(function (e) { 
-        if(e.keyCode === 13){
-            var cityname = $("#city-name").val();
-        }
-    });
 });
