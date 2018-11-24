@@ -1,23 +1,32 @@
+body {
+    color: rgb(10, 9, 9);
+    background-color: #5b7d7f;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+
+}
 .container {
     max-width: 550px;
     height: 100vh;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     margin: 0 auto;
+    padding: 0;
     display: grid;
     grid-template-rows: 1fr 2fr; 
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
+    background-color: #4cf3ff;
+    
 }
 .degrees {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
+    
 
 }
 .wind-speed {
     display: grid;
-    grid-template-columns: 40px auto;
+    grid-template-columns: 30px auto;
     justify-content: center;
 }
 a {
@@ -26,7 +35,19 @@ a {
 }
 .inner {
     margin: 0;
-    padding: 3px;
-    background-color: rgb(2, 0, 0);
-    border-bottom: 5px solid #fff;
+    padding: 0;
+    background-color: #00767f;
+    border-bottom: 5px solid #5b7d7f;
 }
+.weather-info {
+    margin-top: -50px;
+    font-size: 50px;
+}
+#temp {
+    font-size: 90px;
+}
+#icon {
+    width: 80px;
+
+}
+
